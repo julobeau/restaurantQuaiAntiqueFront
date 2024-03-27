@@ -11,6 +11,8 @@ const checkCredentials = () => {
         //Placer ce token en cookie
         setToken(token)
 
+        setCookie(RoleCookieName, "client", 7)
+
         window.location.replace("/")
     }
     else if (mailInput.value == "test@mail.com"){
